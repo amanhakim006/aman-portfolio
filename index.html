@@ -72,7 +72,7 @@
         </div>
     </nav>
 
-    <header class="relative min-h-screen flex items-center justify-center pt-20 hero-bg overflow-hidden">
+    <header class="relative flex items-center justify-center py-32 hero-bg overflow-hidden">
         <div class="absolute top-20 left-10 w-32 h-32 bg-brand-red rounded-full blur-[100px] opacity-20 animate-pulse-slow"></div>
         <div class="absolute bottom-20 right-10 w-40 h-40 bg-blue-600 rounded-full blur-[100px] opacity-10 animate-pulse-slow"></div>
 
@@ -98,7 +98,7 @@
         </div>
     </header>
 
-    <section id="services" class="py-20 bg-brand-dark">
+    <section id="services" class="py-16 bg-brand-dark">
         <div class="container mx-auto px-6">
             <h2 class="text-3xl font-bold mb-12 text-center"><span class="text-brand-red">/</span> My Expertise</h2>
             
@@ -128,17 +128,17 @@
         </div>
     </section>
 
-    <section id="work" class="py-20 relative">
+    <section id="work" class="py-16 relative">
         <div class="container mx-auto px-6">
             <div class="flex justify-between items-end mb-12">
                 <h2 class="text-3xl font-bold"><span class="text-brand-red">/</span> Selected Work</h2>
                 <a href="#" class="text-sm text-gray-400 hover:text-white border-b border-brand-red pb-1">View All Projects -></a>
             </div>
 
-            <div class="grid md:grid-cols-2 gap-8">
+            <div class="max-w-3xl mx-auto space-y-12">
                 
                 <div class="group relative overflow-hidden rounded-2xl glass-card cursor-pointer">
-                    <img src="Festables.jpg" alt="MrBeast Ad" class="w-full h-80 object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition duration-500">
+                    <img src="Festables.jpg" alt="MrBeast Ad" class="w-full h-80 md:h-96 object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition duration-500">
                     <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black to-transparent p-8">
                         <span class="text-brand-red text-xs font-bold tracking-widest uppercase mb-2 block">CGI Advertising</span>
                         <h3 class="text-2xl font-bold">Feastables: Product Cinematic</h3>
@@ -146,31 +146,70 @@
                 </div>
 
                 <div class="group relative overflow-hidden rounded-2xl glass-card cursor-pointer">
-                    <img src="1.3million.jpg" alt="Thumbnail Design" class="w-full h-80 object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition duration-500">
+                    <img src="1.3million.jpg" alt="Thumbnail Design" class="w-full h-80 md:h-96 object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition duration-500">
                     <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black to-transparent p-8">
                         <span class="text-blue-400 text-xs font-bold tracking-widest uppercase mb-2 block">YouTube Packaging</span>
                         <h3 class="text-2xl font-bold">1.3M Channel Rebrand</h3>
                     </div>
                 </div>
 
-                <div class="group relative overflow-hidden rounded-2xl glass-card cursor-pointer">
-                    <img src="tool.png" onerror="this.src='https://freelance-rate-calcy.netlify.app/ alt="Web Tool" class="w-full h-80 object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition duration-500">
+                <div class="group relative overflow-hidden rounded-2xl glass-card cursor-pointer border-2 border-transparent hover:border-green-500/30 transition-all">
+                    <img src="tool.png" onerror="this.src='https://via.placeholder.com/800x600/101010/333333?text=Add+tool.png'" alt="Web Tool" class="w-full h-80 md:h-96 object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition duration-500">
                     <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black to-transparent p-8">
                         <span class="text-green-400 text-xs font-bold tracking-widest uppercase mb-2 block">Web Application</span>
-                        <h3 class="text-2xl font-bold">Freelance Rate Calculator </h3>
+                        <h3 class="text-2xl font-bold">Freelance Rate Calculator (SaaS)</h3>
                     </div>
-                    <a href="#" class="absolute top-4 right-4 w-10 h-10 bg-white text-black rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all hover:bg-brand-red hover:text-white">
-                        <i class="fas fa-external-link-alt"></i>
+                    
+                    <a href="https://amanxdigital.netlify.app/" target="_blank" class="absolute top-4 right-4 w-12 h-12 bg-brand-red text-white rounded-full flex items-center justify-center shadow-lg shadow-red-600/50 hover:scale-110 transition-all z-20">
+                        <i class="fas fa-external-link-alt text-lg"></i>
                     </a>
                 </div>
 
                 <div class="group relative overflow-hidden rounded-2xl glass-card cursor-pointer">
-                    <img src="Lychee-splash.jpg" alt="Soda Ad" class="w-full h-80 object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition duration-500">
+                    <img src="Lychee-splash.jpg" alt="Soda Ad" class="w-full h-80 md:h-96 object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition duration-500">
                     <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black to-transparent p-8">
                         <span class="text-brand-red text-xs font-bold tracking-widest uppercase mb-2 block">3D Modeling</span>
                         <h3 class="text-2xl font-bold">Lychee Splash Campaign</h3>
                     </div>
                 </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-16 bg-black">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <div class="glass-card p-10 rounded-3xl text-center border-t-4 border-brand-red">
+                <h2 class="text-3xl md:text-5xl font-bold mb-6">Ready to scale your content?</h2>
+                <p class="text-gray-400 mb-10 max-w-xl mx-auto">
+                    Currently accepting new clients for Jan/Feb 2026. Let's build something impossible.
+                </p>
+                
+                <form action="https://formsubmit.co/amanhakim037@gmail.com" method="POST" class="max-w-md mx-auto space-y-4 text-left">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="email" name="email" placeholder="Your Email Address" required class="w-full px-5 py-4 bg-gray-900 border border-gray-800 rounded-lg focus:border-brand-red focus:outline-none text-white placeholder-gray-600 transition">
+                    <textarea name="message" rows="3" placeholder="Tell me about your project..." required class="w-full px-5 py-4 bg-gray-900 border border-gray-800 rounded-lg focus:border-brand-red focus:outline-none text-white placeholder-gray-600 transition"></textarea>
+                    <button type="submit" class="w-full py-4 bg-brand-red hover:bg-red-700 text-white font-bold rounded-lg transition shadow-lg shadow-red-900/20">
+                        SEND MESSAGE 🚀
+                    </button>
+                </form>
+
+                <div class="mt-10 flex justify-center gap-6 text-gray-400">
+                    <a href="https://twitter.com/AmanXDigital_" class="hover:text-white hover:scale-110 transition text-2xl"><i class="fab fa-twitter"></i></a>
+                    <a href="https://instagram.com/amanxdigital_" class="hover:text-white hover:scale-110 transition text-2xl"><i class="fab fa-instagram"></i></a>
+                    <a href="mailto:amanhakim037@gmail.com" class="hover:text-white hover:scale-110 transition text-2xl"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-8 text-center text-gray-600 text-sm bg-black border-t border-gray-900">
+        <p>&copy; 2026 AmanXDigital. All rights reserved.</p>
+        <p class="mt-2 text-xs">Designed & Coded by Aman Hakim.</p>
+    </footer>
+
+</body>
+</html>
 
             </div>
         </div>
