@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Aman Hakim</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Outfit', 'sans-serif'], },
+                    colors: {
+                        brand: {
+                            red: '#FF2E2E',
+                            dark: '#0a0a0a',
+                            glass: 'rgba(255, 255, 255, 0.05)'
+                        }
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #050505; color: white; }
+        .glass-card {
+            background: rgba(20, 20, 20, 0.6);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .text-glow { text-shadow: 0 0 20px rgba(255, 46, 46, 0.5); }
+        .hero-bg {
+            background: radial-gradient(circle at 50% 0%, rgba(255, 46, 46, 0.1) 0%, rgba(5, 5, 5, 0) 60%);
+        }
+    </style>
+</head>
+<body class="antialiased min-h-screen hero-bg flex flex-col">
+
+    <nav class="w-full z-50 p-6 flex justify-between items-center">
+        <a href="index.html" class="text-xl font-bold tracking-tighter hover:text-brand-red transition">
+            <i class="fas fa-arrow-left mr-2"></i> Back to Portfolio
+        </a>
+    </nav>
+
+    <main class="flex-grow flex items-center justify-center px-6 py-10">
+        <div class="max-w-4xl w-full text-center">
+            
+            <div class="relative inline-block mb-8 group">
+                <div class="absolute -inset-1 bg-brand-red rounded-full blur opacity-40 group-hover:opacity-75 transition duration-500 animate-pulse-slow"></div>
+                
+                <div class="relative w-48 h-48 md:w-60 md:h-60 rounded-full border-4 border-gray-900 overflow-hidden shadow-[0_0_30px_rgba(255,46,46,0.3)]">
+                    <img src="profile.jpg" onerror="this.src='https://via.placeholder.com/400x400/111/fff?text=Aman'" alt="Aman Hakim" class="w-full h-full object-cover transform hover:scale-110 transition duration-500">
+                </div>
+            </div>
+
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-4">
+                Hi, I'm <span class="text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-400 text-glow">Aman Hakim</span>
+            </h1>
+            <p class="text-brand-red font-mono text-sm md:text-base tracking-widest uppercase mb-8">
+                Digital Architect & AI Visualist
+            </p>
+            <p class="text-gray-400 text-lg max-w-2xl mx-auto mb-16 leading-relaxed">
+                I don't just "design" or "code". I bridge the gap between imagination and reality. 
+                My mission is to help creators and brands dominate the digital space using 
+                <span class="text-white font-bold">Cutting-Edge AI</span> and <span class="text-white font-bold">Performance-First Code</span>.
+            </p>
+
+            <div class="grid md:grid-cols-3 gap-6 text-left">
+                
+                <div class="glass-card p-8 rounded-2xl hover:border-brand-red transition duration-300">
+                    <div class="w-12 h-12 bg-gray-800 rounded-lg flex items-center justify-center text-brand-red text-2xl mb-6">
+                        <i class="fas fa-cube"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">AI Product Ads</h3>
+                    <ul class="space-y-3 text-gray-400 text-sm">
+                        <li class="flex items-start"><i class="fas fa-check text-brand-red mt-1 mr-2"></i> MrBeast-style 3D Product Manipulation.</li>
+                        <li class="flex items-start"><i class="fas fa-check text-brand-red mt-1 mr-2"></i> Cinematic Lighting & Realistic Textures.</li>
+                        <li class="flex items-start"><i class="fas fa-check text-brand-red mt-1 mr-2"></i> Converting boring photos into High-End Commercials.</li>
+                    </ul>
+                </div>
+
+                <div class="glass-card p-8 rounded-2xl hover:border-blue-500 transition duration-300">
+                    <div class="w-12 h-12 bg-gray-800 rounded-lg flex items-center justify-center text-blue-500 text-2xl mb-6">
+                        <i class="fas fa-image"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Viral Thumbnails</h3>
+                    <ul class="space-y-3 text-gray-400 text-sm">
+                        <li class="flex items-start"><i class="fas fa-check text-blue-500 mt-1 mr-2"></i> High-CTR Strategy (Click-Through-Rate).</li>
+                        <li class="flex items-start"><i class="fas fa-check text-blue-500 mt-1 mr-2"></i> Color Psychology & Face Manipulation.</li>
+                        <li class="flex items-start"><i class="fas fa-check text-blue-500 mt-1 mr-2"></i> Storytelling through a single image.</li>
+                    </ul>
+                </div>
+
+                <div class="glass-card p-8 rounded-2xl hover:border-green-500 transition duration-300">
+                    <div class="w-12 h-12 bg-gray-800 rounded-lg flex items-center justify-center text-green-500 text-2xl mb-6">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Web Tools & SaaS</h3>
+                    <ul class="space-y-3 text-gray-400 text-sm">
+                        <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-2"></i> Custom Calculators (like Freelance Rate Calc).</li>
+                        <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-2"></i> Fast, Responsive Landing Pages.</li>
+                        <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-2"></i> Solving real business problems with Logic.</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="mt-16 flex justify-center gap-8">
+                <a href="https://instagram.com/amanxdigital_" target="_blank" class="text-gray-500 hover:text-brand-red text-3xl transition transform hover:scale-110">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://twitter.com/AmanXDigital_" target="_blank" class="text-gray-500 hover:text-white text-3xl transition transform hover:scale-110">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="mailto:amanhakim037@gmail.com" class="text-gray-500 hover:text-blue-400 text-3xl transition transform hover:scale-110">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+
+            <p class="mt-8 text-gray-600 text-sm">
+                Born 2001 • Based in India • Creating Globally
+            </p>
+        </div>
+    </main>
+
+</body>
+</html>
