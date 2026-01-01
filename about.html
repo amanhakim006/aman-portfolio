@@ -28,27 +28,38 @@
         }
     </script>
     <style>
-        body { background-color: #050505; color: white; }
+        /* FORCE DARK BACKGROUND */
+        html, body { 
+            background-color: #050505 !important; 
+            color: white !important; 
+        }
+        
         .glass-card {
             background: rgba(20, 20, 20, 0.6);
             backdrop-filter: blur(12px);
             border: 1px solid rgba(255, 255, 255, 0.1);
             transition: all 0.3s ease;
         }
+        .glass-card:hover {
+            border-color: #FF2E2E;
+            transform: translateY(-5px);
+            box-shadow: 0 0 20px rgba(255, 46, 46, 0.2);
+        }
         .text-glow { text-shadow: 0 0 20px rgba(255, 46, 46, 0.5); }
-        /* Same Background Gradient as Index */
+        
+        /* Dark Gradient Mesh */
         .hero-bg {
-            background: radial-gradient(circle at 50% 50%, rgba(255, 46, 46, 0.1) 0%, rgba(5, 5, 5, 0) 60%);
+            background: radial-gradient(circle at 50% 0%, rgba(255, 46, 46, 0.1) 0%, rgba(5, 5, 5, 0) 60%);
         }
     </style>
 </head>
-<body class="antialiased min-h-screen hero-bg flex flex-col relative overflow-x-hidden">
+<body class="bg-[#050505] text-white antialiased min-h-screen hero-bg flex flex-col relative overflow-x-hidden">
 
     <div class="absolute top-20 left-10 w-32 h-32 bg-brand-red rounded-full blur-[100px] opacity-20 animate-pulse-slow pointer-events-none"></div>
     <div class="absolute bottom-20 right-10 w-40 h-40 bg-blue-600 rounded-full blur-[100px] opacity-10 animate-pulse-slow pointer-events-none"></div>
 
     <nav class="w-full z-50 p-6 flex justify-between items-center relative">
-        <a href="index.html" class="text-xl font-bold tracking-tighter hover:text-brand-red transition flex items-center gap-2">
+        <a href="index.html" class="text-xl font-bold tracking-tighter hover:text-brand-red transition flex items-center gap-2 text-white">
             <i class="fas fa-arrow-left"></i> Back to Portfolio
         </a>
     </nav>
@@ -58,13 +69,12 @@
             
             <div class="relative inline-block mb-8 group">
                 <div class="absolute -inset-1 bg-brand-red rounded-full blur opacity-40 group-hover:opacity-75 transition duration-500 animate-pulse-slow"></div>
-                
-                <div class="relative w-48 h-48 md:w-60 md:h-60 rounded-full border-4 border-gray-900 overflow-hidden shadow-[0_0_30px_rgba(255,46,46,0.3)]">
+                <div class="relative w-48 h-48 md:w-60 md:h-60 rounded-full border-4 border-gray-900 overflow-hidden shadow-[0_0_30px_rgba(255,46,46,0.3)] bg-black">
                     <img src="profile.jpg" onerror="this.src='https://via.placeholder.com/400x400/111/fff?text=Aman'" alt="Aman Hakim" class="w-full h-full object-cover transform hover:scale-110 transition duration-500">
                 </div>
             </div>
 
-            <h1 class="text-4xl md:text-6xl font-extrabold mb-4">
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-4 text-white">
                 Hi, I'm <span class="text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-400 text-glow">Aman Hakim</span>
             </h1>
             <p class="text-brand-red font-mono text-sm md:text-base tracking-widest uppercase mb-8">
@@ -78,39 +88,39 @@
 
             <div class="grid md:grid-cols-3 gap-6 text-left">
                 
-                <div class="glass-card p-8 rounded-2xl hover:border-brand-red transition duration-300">
+                <div class="glass-card p-8 rounded-2xl">
                     <div class="w-12 h-12 bg-gray-800 rounded-lg flex items-center justify-center text-brand-red text-2xl mb-6">
                         <i class="fas fa-cube"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-4">AI Product Ads</h3>
+                    <h3 class="text-xl font-bold mb-4 text-white">AI Product Ads</h3>
                     <ul class="space-y-3 text-gray-400 text-sm">
-                        <li class="flex items-start"><i class="fas fa-check text-brand-red mt-1 mr-2"></i> MrBeast-style 3D Product Manipulation.</li>
-                        <li class="flex items-start"><i class="fas fa-check text-brand-red mt-1 mr-2"></i> Cinematic Lighting & Realistic Textures.</li>
-                        <li class="flex items-start"><i class="fas fa-check text-brand-red mt-1 mr-2"></i> Converting boring photos into High-End Commercials.</li>
+                        <li class="flex items-start"><i class="fas fa-check text-brand-red mt-1 mr-2"></i> MrBeast-style 3D Manipulation.</li>
+                        <li class="flex items-start"><i class="fas fa-check text-brand-red mt-1 mr-2"></i> Cinematic Lighting.</li>
+                        <li class="flex items-start"><i class="fas fa-check text-brand-red mt-1 mr-2"></i> High-End Commercials.</li>
                     </ul>
                 </div>
 
-                <div class="glass-card p-8 rounded-2xl hover:border-blue-500 transition duration-300">
+                <div class="glass-card p-8 rounded-2xl">
                     <div class="w-12 h-12 bg-gray-800 rounded-lg flex items-center justify-center text-blue-500 text-2xl mb-6">
                         <i class="fas fa-image"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-4">Viral Thumbnails</h3>
+                    <h3 class="text-xl font-bold mb-4 text-white">Viral Thumbnails</h3>
                     <ul class="space-y-3 text-gray-400 text-sm">
-                        <li class="flex items-start"><i class="fas fa-check text-blue-500 mt-1 mr-2"></i> High-CTR Strategy (Click-Through-Rate).</li>
-                        <li class="flex items-start"><i class="fas fa-check text-blue-500 mt-1 mr-2"></i> Color Psychology & Face Manipulation.</li>
-                        <li class="flex items-start"><i class="fas fa-check text-blue-500 mt-1 mr-2"></i> Storytelling through a single image.</li>
+                        <li class="flex items-start"><i class="fas fa-check text-blue-500 mt-1 mr-2"></i> High-CTR Strategy.</li>
+                        <li class="flex items-start"><i class="fas fa-check text-blue-500 mt-1 mr-2"></i> Color Psychology.</li>
+                        <li class="flex items-start"><i class="fas fa-check text-blue-500 mt-1 mr-2"></i> Visual Storytelling.</li>
                     </ul>
                 </div>
 
-                <div class="glass-card p-8 rounded-2xl hover:border-green-500 transition duration-300">
+                <div class="glass-card p-8 rounded-2xl">
                     <div class="w-12 h-12 bg-gray-800 rounded-lg flex items-center justify-center text-green-500 text-2xl mb-6">
                         <i class="fas fa-code"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-4">Web Tools & SaaS</h3>
+                    <h3 class="text-xl font-bold mb-4 text-white">Web Tools & SaaS</h3>
                     <ul class="space-y-3 text-gray-400 text-sm">
-                        <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-2"></i> Custom Calculators (like Freelance Rate Calc).</li>
-                        <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-2"></i> Fast, Responsive Landing Pages.</li>
-                        <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-2"></i> Solving real business problems with Logic.</li>
+                        <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-2"></i> Custom Calculators.</li>
+                        <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-2"></i> Fast Landing Pages.</li>
+                        <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-2"></i> React & Tailwind Logic.</li>
                     </ul>
                 </div>
 
@@ -136,4 +146,3 @@
 
 </body>
 </html>
-
